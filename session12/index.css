@@ -5,8 +5,6 @@
 
 }
 
-.profile-image{
-    width: 300px;
-    height: auto;
+.vh-50{
+    height: 80dvh;
 }
-
