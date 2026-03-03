@@ -8,3 +8,16 @@
 .vh-50{
     height: 80dvh;
 }
+
+.aboutus{
+    position: relative;
+}
+
+.aboutus::after {
+    content: "About Us";
+    position: absolute;
+    border-bottom: 5px solid rgb(255, 212, 94);
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%); 
+}
