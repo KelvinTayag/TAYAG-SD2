@@ -1,51 +1,267 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kelvin Portfolio</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="./index.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kelvin Portfolio</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+        <link rel="stylesheet" href="./index.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
 
-    <!-- NAVBAR SECTION START -->
-    <nav class="navbar navbar-expand-lg backgroundcolor shadow sticky-top p-3">
-        <div class="container-fluid">
-            <img src="./image/4537069.png" class="Myimage">
-            <a class="navbar-brand fw-bold textcolor ms-4" href="#">Kelv's Portfolio</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+        <!-- NAVBAR SECTION START -->
+        <nav class="navbar navbar-expand-lg navbarbgcolor shadow sticky-top p-3">
+            <div class="container-fluid">
+                <img src="./image/me.jpg" class="Myimage rounded-5">
+                <a class="navbar-brand fw-bold ms-3 text-dark " href="#Home"><strong>Kelv's Portfolio</strong></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#About">About</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#Tools">Tools</a>
+                        </li>
+                        <a class="nav-link" href="#Projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#Contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
-    <!-- NAVBAR SECTION END -->
+        </nav>
+        <!-- NAVBAR SECTION END -->
+        
+        <!-- HOME PAGE START -->
+        <section  class="landing">
+            <div id="Home" class="container-fluid d-flex justify-content-center align-items-center"> 
+                <div class="row flex-wrap-reverse align-items-center justify-content-around">
+                    <div class="col-12 col-6 col-md-4 m-2 text-center">
+                        <h1 class="display-4 fw-bold">Hi, I'm Kelvin!</h1>
+                        <p class="lead mt-2">A Computer Engineering student at University of the Assumption. Welcome to my Portfolio!</p>
+                        <figcaption class="blockquote-footer fst-italic text-dark text-center m-2">
+                            <cite title="Source Title">Pain makes you stronger</cite>
+                        </figcaption>
+                        <a class="btn mt-2 rounded-4 align-content-center" href="#About">Know About Me</a>
+                    </div>
+                    <div class="col-12 col-6 col-md-4">
+                        <img src="./image/landingimg.png" class="img-fluid ">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- HOME PAGE END -->
+        
+        <!-- ABOUT SECTION START -->
+        <section  class="my-5 shadow">
+            <div id="About" class="d-flex align-items-center justify-content-center">
+                <h1 class="fw-bold mt-2 mb-2 display-3 bottomline">About Me</h1>
+            </div>
 
+            <div class="d-flex justify-content-center align-items-center mx-2">
+                <p class="text-center col-12 col-md-6 mt-2">I'm 20 years old, living in San Isidro, Bacolor, Pampanga. I am a Computer Engineering student at the University of the Assumption. I have a strong passion for technology, and I am eager to learn and grow in the field of software and hardware development. I am always willing to collaborate and contribute to projects. I am thrilled to explore new opportunities and challenges in the future tech industry.</p>
+            </div>
 
-    <!-- LANDING PAGE START -->
-    <section class="#landing">
-        <div class="natureimg">
-        </div>
-    </section>
-    <!-- LANDING PAGE START -->
+            <div class="d-flex align-items-center justify-content-center my-4">
+                <h2 class="fw-bold display-5 bottomline">Education</h2>
+            </div>
 
+            <div class="d-flex my-4 justify-content-around align-items-center">
+                <div class="container mb-4">
+                    <div class="row justify-content-center">
+                        <div class="col-12 col-6 col-md-4 m-2">
+                            <h4 class="text-center fw-bold line mb-3">Grade School</h4>
+                            <p class="text-center">Pandacaqui Resettlement Elementary School (2009)</p>
+                        </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-</body>
+                        <div class="col-12 col-6 col-md-4 m-2">
+                            <h4 class="text-center fw-bold line mb-3">High School</h4>
+                            <p class="text-center">Magliman Integrated School (2011-2015)</p>
+                        </div>
+
+                        <div class="col-12 col-6 col-md-4 m-2">
+                            <h4 class="text-center fw-bold line mb-3">Senior High School</h4>
+                            <p class="text-center">University of the Assumption (2021-2023)</p>
+                        </div>
+                        <div class="col-12 col-6 col-md-4 m-2">
+                            <h4 class="text-center fw-bold line mb-3">College</h4>
+                            <p class="text-center ">University of the Assumption (2023-Present)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT SECTION END -->
+
+        <!-- TOOLS SECTION START-->
+        <section >
+            <div id="Tools" class=" p-5 bgtools d-flex flex-column justify-content-center align-items-center m-3 rounded-3">
+                <h1 class="fw-bold display-3 bottomline">Tools I Use</h1>
+
+                <div class="d-flex mt-4 justify-content-around align-items-center m-5">
+                    <div class="row">
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <img src="./image/html.png" alt="Html" class="img-fluid toolicons p-3 p-md-7 ">
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <img src="./image/bootstrap.png" alt="Bootstrap" class="img-fluid toolicons p-3 p-md-7">
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <img src="./image/python.webp" alt="Python" class="img-fluid toolicons p-3 p-md-7">
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <img src="./image/css.png" alt="CSS" class="img-fluid toolicons p-3 p-md-7">
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <img src="./image/c++.png" alt="C++" class="img-fluid toolicons p-3 p-md-7">
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <img src="./image/java.png" alt="Java" class="img-fluid toolicons p-3 p-md-7">
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <img src="./image/figma.png" alt="Figma" class="img-fluid toolicons p-3 p-md-7">
+                        </div>
+                        <div class="col-12 col-md-3 col-lg-3">
+                            <img src="./image/canva.png" alt="Canva" class="img-fluid toolicons p-3 p-md-7">   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- TOOLS SECTION END -->
+        
+        <!-- PROJECTS SECTION START -->
+        <section>
+            <div id="Projects" class="d-flex flex-column justify-content-center align-items-center my-4 p-5 shadow">
+                <h1 class="fw-bold display-3 bottomline mb-2 ">My Projects</h1>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4 my-4 mx-4 justify-content-center">
+                    <div class="col my-2">
+                        <div class="card h-100 shadow Projects">
+                            <img src="./image/OnlyDogs.png" class="card-img-top" alt="OnlyDogs">
+                            <div class="card-body">
+                                <h5 class="card-title text-center fw-bold">OnlyDogs</h5>
+                                <p class="card-text mt-2 text-center">OnlyDogs is Dating Website for furparents.</p>
+                                <a href="https://only-dogs.vercel.app/" class="btn mt-5 align-items-center justify-content-center d-flex">Go to OnlyDogs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card h-100 shadow Projects">
+                            <img src="./image/loginform.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Login Form</h5>
+                                <p class="card-text text-center mt-2">This project was made during our first year.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col my-2">
+                        <div class="card h-100 shadow Projects">
+                            <img src="./image/Portfolio.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title text-center">Portfolio</h5>
+                                <p class="card-text mt-2 text-center">Porfolio for Prelim Output SoftDev2.</p>
+                                <a href="http://127.0.0.1:3000/dev-portfolio/index.html?serverWindowId=e1a54bd7-7e61-43db-addb-c8fee4243429#Home" class="btn mt-5 align-items-center justify-content-center d-flex">Go to My Portfolio</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- PROJECTS SECTION END -->
+
+        <!-- CONTACT SECTION START -->
+        <section class="d-flex align-items-center justify-content-center bgcontacts mx-3 rounded-3 mb-3">
+            <div id="Contact" class="container">
+                <div class="mt-2">
+                    <h1 class="fw-bold display-3 text-center bottomline">Contacts</h1>
+                </div>
+                <div class="row m-5 ">
+                    <div class="col-lg-6 mb-4">
+                        <div class="bg-white rounded shadow-lg p-4">
+                            <h5 class="text-uppercase mb-4">Leave a Message</h5>
+                            <form class="row g-3">
+                    <!-- FORM END -->
+                    
+                                <!-- NAME START-->
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted">Name</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="bi bi-person-fill"></i>
+                                        </span>
+                                        <input type="text" class="form-control" placeholder="Full Name" required>
+                                    </div>
+                                </div>
+                                <!-- NAME END-->
+                                
+                                <!-- EMAIL START -->
+                                <div class="col-md-6">
+                                    <label class="form-label text-muted">Email address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">
+                                            <i class="bi bi-envelope-fill"></i>
+                                        </span>
+                                        <input type="email" class="form-control" placeholder="name@example.com" required>
+                                    </div>
+                                </div>
+                                <!-- EMAIL END -->
+                                
+                                <!-- SUBJECT START-->
+                                <div class="col-12 col-6">
+                                    <label class="form-label">Subject</label>
+                                    <input type="text" class="form-control" placeholder="Subject" required>
+                                </div>
+                                <!-- SUBJECT END -->
+
+                                <!-- MESSAGE START -->
+                                <div class="col-12 col-6">
+                                    <label class="form-label">Message</label>
+                                    <textarea class="form-control" rows="5" placeholder="Leave your message here." required></textarea>
+                                </div>
+                                <!-- MESSAGE END -->
+
+                                <!-- BUTTON START -->
+                                <div class="col-12 col-6 text-center">
+                                    <button class="btn px-4 m-2">SEND MESSAGE</button>
+                                </div>
+                                <!-- BUTTON END -->
+                            </form>
+                        </div>
+                    </div>
+                    <!-- MAP START -->
+                    <div class="col-12 col-md-6">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3853.289591679078!2d120.64920048437098!3d15.032090229014988!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3396f65804b98b6b%3A0x6424e5318f6929d3!2sSan%20Isidro%2C%20Bacolor%2C%20Pampanga!5e0!3m2!1sen!2sph!4v1772983690443!5m2!1sen!2sph" width="100%" height="440" style="border:0;" allowfullscreen=""loading="lazy" class="rounded-3 shadow"></iframe>
+                    </div>
+
+                    <div>
+                        <h4 class="bottomline">My Socials</h4>
+                        <div class="footer-socials d-flex mt-3">
+                            <a href="https://www.facebook.com/tayag.kelvin"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://github.com/KelvinTayag"><i class="fab fa-github"></i></a>
+                            <a href="https://myaccount.google.com/?utm_source=chrome-profile-chooser&pli=1"><i class="fab fa-google"></i></a>
+                        </div>
+                    </div>
+                    <!-- MAP END -->
+                </div>
+            </div>
+        </section>
+        <!-- CONTACT SECTION END -->
+        
+        <!-- FOOTER START -->
+        <footer class="footer text-center p-2 text-dark">
+            <p class="fw-bold">© 2026 Kelv's Portforlio. All rights reserved.</p>
+        </footer>
+        <!-- FOOTER START -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
 </html>
