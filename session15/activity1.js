@@ -18,7 +18,7 @@ alert("Temperature in kelvin: " + kelvin);
 // Activity2
 
 let radius = parseInt(prompt("Enter Circle Radius. "));
-let area = 3.14 * radius * radius;
+let area = 3.14159265 * radius * radius;
 
 
 alert("Circle Area: " + area);
