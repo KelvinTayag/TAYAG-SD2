@@ -37,6 +37,8 @@ console.log("Hello World!");
 //     alert("Please enter valid role");
 // }
 
+
+// STRING PUT A "" 
 let role = prompt("Please etnter your role.").toLocaleLowerCase();
 
 switch (role) {
@@ -55,6 +57,8 @@ switch (role) {
 
 
 // 2/ Switch-Case Statement
+
+// INTEGERS 
 
 // let day = 2;
 
