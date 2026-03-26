@@ -53,6 +53,9 @@ function startCalc(){
         case 6:
             reset();
             break;
+        default:
+            alert("Please enter valid action");
+            break;
     }
 }
 
