@@ -23,10 +23,11 @@ function addFriend(name){
 // removerFriend
 
 function removeFriend(name) {
-    let friendList = friends.indexOf(name.toUpperCase());
+    let unFriend = friends.includes(name.toUpperCase());
 
-    if(friendList == true){
-        friends.splice(friendList, 1);
+    if(unFriend == true){
+        let unFriend = friends.indexOf(name.toUpperCase());
+        friends.splice(unFriend, 1);
         console.log(`You removed ${name.toUpperCase()}.`);
     }else{
         console.log(`${name.toUpperCase()} is not on your friend list.`);
