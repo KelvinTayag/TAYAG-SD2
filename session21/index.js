@@ -3,89 +3,89 @@
 //  [SECTION] JavaScript Objects
 // Imitates real-world description and real-world objects
 
-let arr = [1, 2, 3];
+// let arr = [1, 2, 3];
 
-let obj = {
-    name: "Carlo",
-    age: 22
-}
+// let obj = {
+//     name: "Carlo",
+//     age: 22
+// }
 
-console.log(typeof arr); // // child or object
-console.log(typeof obj); // object is the 1st developed 
+// console.log(typeof arr); // // child or object
+// console.log(typeof obj); // object is the 1st developed 
 
-let person = {
-    completeName: "Juan Dela Cruz", // properties -> //value -> // keypair
-    age: 25,
-    height: 160,
-    weigth: 85,
-    contactNumber: [1234, 4567],
-    address: {
-        houseNo: 1,
-        brgy: "Del Pilar",
-        city: "CSFP"
-    }
-}
+// let person = {
+//     completeName: "Juan Dela Cruz", // properties -> //value -> // keypair
+//     age: 25,
+//     height: 160,
+//     weigth: 85,
+//     contactNumber: [1234, 4567],
+//     address: {
+//         houseNo: 1,
+//         brgy: "Del Pilar",
+//         city: "CSFP"
+//     }
+// }
 
-console.log(person);
-console.log();
+// console.log(person);
+// console.log();
 
-// Dot notation
-// Access values inside an obejct property
+// // Dot notation
+// // Access values inside an obejct property
 
-console.log(person.completeName);
+// console.log(person.completeName);
 
-console.log(`Hi, my name is ${person.completeName} and i am ${person.age} years old!`);
+// console.log(`Hi, my name is ${person.completeName} and i am ${person.age} years old!`);
 
-console.log(person['completeName']);
+// console.log(person['completeName']);
 
-// updating a value via dot notation
-person.completeName = "John Doe";
+// // updating a value via dot notation
+// person.completeName = "John Doe";
 
-console.log(person);
+// console.log(person);
 
-// adding a property inside a NOTATION
-person.email = "jdoe@gmail.com";
+// // adding a property inside a NOTATION
+// person.email = "jdoe@gmail.com";
 
-console.log(person);
+// console.log(person);
 
-//  Class and Objects (how we construct properly)
-// to add properties in a class use "this" keyword
-function Animal (name, breed, color, kind){
-    //constructors
-    this.name = name;
-    this.kind = kind;
-    this.breed = breed;
-    this.color = color;
-    this.makesound = function(){
-        if(this.kind == "dog"){
-            console.log("Woof! Woof!");
-        } else if(this.kind == "cat"){
-            console.log("Meow! Meow!");
-        }else {
-            console.log("Cannot provide sound for the given animal.");
-        }
-    }
-}
+// //  Class and Objects (how we construct properly)
+// // to add properties in a class use "this" keyword
+// function Animal (name, breed, color, kind){
+//     //constructors
+//     this.name = name;
+//     this.kind = kind;
+//     this.breed = breed;
+//     this.color = color;
+//     this.makesound = function(){
+//         if(this.kind == "dog"){
+//             console.log("Woof! Woof!");
+//         } else if(this.kind == "cat"){
+//             console.log("Meow! Meow!");
+//         }else {
+//             console.log("Cannot provide sound for the given animal.");
+//         }
+//     }
+// }
 
-// Instance -> copy/duplicate of a function class
+// // Instance -> copy/duplicate of a function class
 
-let dog = new Animal("Bruno", "Aspin", "Brown", "dog");
-console.log(dog);
+// let dog = new Animal("Bruno", "Aspin", "Brown", "dog");
+// console.log(dog);
 
-console.log(dog.name);
-dog.makesound();
+// console.log(dog.name);
+// dog.makesound();
 
-let cat = new Animal("Luna", "Puspin", "Gray", "cat");
-console.log(cat.name);
-cat.makesound();
-console.log(cat);
+// let cat = new Animal("Luna", "Puspin", "Gray", "cat");
+// console.log(cat.name);
+// cat.makesound();
+// console.log(cat);
 
-let trex = new Animal("Rex", "Dino", "Green", "dinosaur");
-trex.makesound();
-console.log(trex);
+// let trex = new Animal("Rex", "Dino", "Green", "dinosaur");
+// trex.makesound();
+// console.log(trex);
 
-console.log(person.contactNumber[1]);
-console.log(person.address.brgy);
+// console.log(person.contactNumber[1]);
+// console.log(person.address.brgy);
 
 //  [SECTION] Pokemon
 
@@ -99,20 +99,24 @@ function Pokemon(name, level, health, mana){
         let damage = 20;
         console.log(`${this.name} used tackle attack!`);
         target.health -= damage;
+        
+        this.mana += 40;
+        if(this.mana > 100){
+            this.mana = 100;
+        }
+        console.log(`${this.name} MANA: ${this.mana}`);
     }
 
     this.useHealPotion = function(){
-        let totalHealth = 100 * this.level;
-        if(this.health < totalHealth){
-            if((this.health + 150) >= totalHealth){
-                this.health = totalHealth;
-                console.log(`${this.name} HEALTH: ${this.health}`);
-            }else{
-                this.health += 150;
-                console.log(`${this.name} HEALTH: ${this.health}`);
+        if(this.health < 500){
+            this.health += 150;
+
+            if(this.health > 500){
+                this.health = 500;
             }
+            console.log(`${this.name} HEALTH: ${this.health}`);
         }else{
-            console.log(`${this.name}'s health is full`);
+            console.log(`${this.name}'s Health is full`);
         }
     }
 
@@ -125,7 +129,7 @@ function Pokemon(name, level, health, mana){
                 console.log(`${this.name} used Thunderbolt!`);
                 target.health -= damage;
                 this.mana -= 50;
-                console.log(`${this.name} mana: ${this.mana}. ${target.name} health: ${target.health}`);
+                console.log(`${this.name} MANA: ${this.mana}. ${target.name} HEALTH: ${target.health}`);
             }
         }else if(this.name == "Charmander"){
             if(this.mana < 50){
@@ -135,7 +139,7 @@ function Pokemon(name, level, health, mana){
             console.log(`${this.name} used Flame Thrower!`);
             target.health -= damage;
             this.mana -= 50;
-            console.log(`${this.name} mana: ${this.mana}. ${target.name} health: ${target.health}`);
+            console.log(`${this.name} MANA: ${this.mana}. ${target.name} HEALTH: ${target.health}`);
             }
         }
     }
@@ -147,25 +151,55 @@ console.log(pikachu);
 let charmander = new Pokemon("Charmander", 5, 100, 100);
 console.log(charmander);
 
-pikachu.tackle(charmander);
-pikachu.tackle(charmander);
-pikachu.tackle(charmander);
+// pikachu.tackle(charmander);
+// pikachu.tackle(charmander);
+// pikachu.tackle(charmander);
 
-console.log(charmander);
+// console.log(charmander);
 
+// charmander.tackle(pikachu);
+// console.log(pikachu);
+// charmander.tackle(pikachu);
+
+// charmander.useSkill1(pikachu);
+// charmander.useSkill1(pikachu);
+// charmander.useSkill1(pikachu);
+
+// pikachu.useHealPotion();
+// pikachu.useHealPotion();
+// pikachu.useHealPotion();
+// pikachu.useHealPotion();
+// pikachu.useHealPotion();
+// console.log(pikachu);
+
+// pikachu.tackle(charmander);
+
+// pikachu.useHealPotion(charmander);
+// pikachu.useSkill1(charmander);
+
+charmander.useHealPotion(pikachu);  
+charmander.useSkill1(pikachu);
+charmander.useSkill1(pikachu);
 charmander.tackle(pikachu);
-console.log(pikachu);
+charmander.tackle(pikachu);
+charmander.useSkill1(pikachu);
+charmander.useSkill1(pikachu);
+charmander.useHealPotion(pikachu);
 
-charmander.useSkill1(pikachu);
-charmander.useSkill1(pikachu);
-charmander.useSkill1(pikachu);
 
-pikachu.useHealPotion();
-pikachu.useHealPotion();
-pikachu.useHealPotion();
-pikachu.useHealPotion();
-pikachu.useHealPotion();
-console.log(pikachu);
+
+
+pikachu.useHealPotion(charmander); 
+pikachu.useSkill1(charmander);
+pikachu.useSkill1(charmander);
+pikachu.tackle(charmander);
+pikachu.tackle(charmander);
+pikachu.useSkill1(charmander);
+// pikachu.useHealPotion(charmander); 
+
+
+
+
 
 
 // Create function constructor use help potion that will add 150 health in pokemon
