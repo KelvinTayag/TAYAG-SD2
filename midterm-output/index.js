@@ -74,13 +74,13 @@ class Character {
       damage += 20;
       this.rage--;
     }
-   // Damage Reduction when using Shield
+    // Damage Reduction when using Shield
     damage = applyShield(target, damage);
     target.health = Math.max(0, target.health - damage);
 
     this.mana = Math.min(this.mana + 15, this.maxMana);
 
-   // Recently Added for defeated enemy or player display
+    // Recently Added for defeated enemy or player display
 
     alert(`${this.name} attacks ${target.name}! (${target.health} HP left)`);
     if (target.health <= 0) {
@@ -122,7 +122,7 @@ class Character {
         break;
     }
   }
- // Health and Mana Potion Logic for Heroes
+  // Health and Mana Potion Logic for Heroes
   usePotion() {
     if (this.potions <= 0) return alert("No HP potions!");
     this.potions--;
@@ -178,6 +178,7 @@ const mobTypes = [
   { name: "Fallen Knight", classType: "Paladin" },
 ];
 
+// SPAWNING OF MOB TYPES TO BATTLE
 function spawnEnemy() {
   let mob = mobTypes[Math.floor(Math.random() * mobTypes.length)];
   let level = Math.min(1 + Math.floor(kills / 2), 5);
@@ -188,7 +189,7 @@ function spawnEnemy() {
   return enemy;
 }
 
-// BOSS
+// BOSS FUNCTION
 function spawnBoss() {
   let boss = new Character("Demon King", "Warrior", 5);
 
@@ -201,7 +202,7 @@ function spawnBoss() {
 
 function bossSkill(boss, players) {
   let target = players[Math.floor(Math.random() * players.length)];
-  let skill = Math.floor(Math.random() * 5); 
+  let skill = Math.floor(Math.random() * 5);
 
   switch (skill) {
     case 0:
@@ -351,7 +352,6 @@ while (players.some((p) => p.health > 0)) {
   let choice = prompt(
     `MENU
 Gold: ${leader.gold} | Kills: ${kills}
-
 1. Explore
 2. Shop
 3. Rest
